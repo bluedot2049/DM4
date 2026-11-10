@@ -69,8 +69,8 @@ const WORKS = [
   {
     id: 'whocares',
     cat: 'album',
-    title: '胡凱兒《你給過我的快樂》',
-    en: 'Who Cares',
+    title: '台灣樂團',
+    en: 'Taiwanese Band',
     sub: '封面・歌詞本・盒套 Cover / Booklet / Case',
     year: '2022',
     cover: 'hu-cover',
