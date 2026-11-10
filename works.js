@@ -86,7 +86,7 @@ const WORKS = [
     cat: 'r18',
     title: '自製 R18 視覺小說遊戲',
     en: 'Self-made R18 Visual Novel Game',
-    sub: 'AI 生成・Tensor-hub 製作・可 NSFW / AI-generated, made on Tensor-hub, NSFW available',
+    sub: 'AI 生成與手動修改・Tensor-hub 製作・可 NSFW / AI-generated and hand-edited, made on Tensor-hub, NSFW available',
     year: '2026',
     cover: 'rd-platform',
     bg: '#1c1e26',
