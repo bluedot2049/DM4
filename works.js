@@ -1,7 +1,8 @@
 // 頁面上所有的字和圖都在這裡（網頁上按「編輯」改完存檔會重寫這個檔）
 // rows：每一列放幾張圖就並排幾張，高度自動對齊；{ mosaic: [大, 小, 小…] } 是拼貼（小圖 4 張排 2×2、9 張排 3×3），flip: true 大圖在右
 // 圖片名字對應 img/<名字>.webp（長邊 2400）和 img/<名字>-s.webp（長邊 1000）
-// 字一律中英並列；CATS 的 nav 是上方列用的短名
+// 字一律中英並列：專案 title 中文、en 英文（手機上分兩行）；CATS 的 nav 是上方列用的短名
+// { imgs: [...], swipe: true }：手機上這列改成橫滑輪播（寬圖會自動橫滑，不用標）
 
 const SITE = {
   name: '吳承恩',
@@ -24,7 +25,8 @@ const WORKS = [
   {
     id: 'bluedot',
     cat: 'personal',
-    title: '電繪 Digital Illustration',
+    title: '電繪',
+    en: 'Digital Illustration',
     sub: 'CSP',
     year: '',
     cover: 'bd-forest',
@@ -37,20 +39,22 @@ const WORKS = [
   {
     id: 'recent',
     cat: 'print',
-    title: '海報 Poster',
+    title: '海報',
+    en: 'Poster',
     sub: 'CSP / Illustrator',
     year: '',
     cover: 'rp-lelele',
     bg: '#e9e6df',
     fg: '#222',
     rows: [
-      ['rp-lelele', 'rp-youth', 'umwauz1og0', 'umwauzzef0', 'rp-village'],
+      { imgs: ['rp-lelele', 'rp-youth', 'umwauz1og0', 'umwauzzef0', 'rp-village'], swipe: true },
     ],
   },
   {
     id: 'booklet',
     cat: 'print',
-    title: '節目冊 Program Booklet',
+    title: '節目冊',
+    en: 'Program Booklet',
     sub: '編排・印刷 Layout / Print',
     year: '2020–2025',
     cover: 'bk-cs',
@@ -65,7 +69,8 @@ const WORKS = [
   {
     id: 'whocares',
     cat: 'album',
-    title: '胡凱兒 Who Cares《你給過我的快樂》',
+    title: '胡凱兒《你給過我的快樂》',
+    en: 'Who Cares',
     sub: '封面・歌詞本・盒套 Cover / Booklet / Case',
     year: '2022',
     cover: 'hu-cover',
@@ -79,7 +84,8 @@ const WORKS = [
   {
     id: 'read',
     cat: 'r18',
-    title: '自製 R18 視覺小說遊戲 Self-made R18 Visual Novel Game',
+    title: '自製 R18 視覺小說遊戲',
+    en: 'Self-made R18 Visual Novel Game',
     sub: 'AI 生成・Tensor-hub 製作・可 NSFW / AI-generated, made on Tensor-hub, NSFW available',
     year: '2026',
     cover: 'rd-platform',

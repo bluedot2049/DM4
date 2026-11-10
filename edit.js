@@ -199,7 +199,7 @@
     else if (act === 'delproj') { if (!twice(b, '再按一次刪除')) return; WORKS.splice(WORKS.indexOf(w), 1); }
     else if (act === 'newproj') {
       const cat = b.closest('.cat').dataset.cat;
-      const nw = { id: 'p' + Date.now().toString(36), cat, title: '新專案', sub: '業主', year: String(new Date().getFullYear()), cover: '', bg: '#ece8e1', fg: '#222222', rows: [] };
+      const nw = { id: 'p' + Date.now().toString(36), cat, title: '新專案', en: 'New Project', sub: '業主', year: String(new Date().getFullYear()), cover: '', bg: '#ece8e1', fg: '#222222', rows: [] };
       const lastOf = WORKS.map((x) => x.cat).lastIndexOf(cat);
       WORKS.splice(lastOf + 1, 0, nw);
       setDirty(); render();
