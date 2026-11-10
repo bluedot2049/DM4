@@ -2,6 +2,9 @@
 
 純圖像作品集，參考 Behance 個人頁＋專案頁，但全部放在同一頁：個人作品（一張大圖＋旁邊 3×3 小圖當首頁，沒有橫幅） → 海報／印刷 → 專輯設計製作 → R18（只放自製 R18 視覺小說遊戲的角色圖） → 聯絡。
 
+- 上線：https://bluedot2049.github.io/DM4/（repo bluedot2049/DM4，public，GitHub Pages 從 main 根目錄）。改完 `git add -A; git commit; git push` 就會更新。
+- claude.ai 版（可在網頁上編輯）：https://claude.ai/artifact/7M2TpdaNefC6A1i3S347Uo 。網頁上存過的話，先抓回本機再 push。
+
 ## 檔案
 
 ```
